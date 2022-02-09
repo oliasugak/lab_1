@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #F9FBFF;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 100px 190px 100px 100px;
+}
+
+.left-side {
+  margin-right: 120px;
+  margin-top: 250px;
+}
+
+.greetings {
+  width: max-content;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  color: #5E62B6;
+}
+
+.daily-rate-label {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #9BB2DE;
+}
+
+.daily-rate-container {
+  display: flex;
+  gap: 50px;
+
+  margin-top: 16px;
+}
+
+.rate-amount {
+  display: flex;
+  align-items: center;
+  padding: 16px 40px 16px 24px;
+
+  background: #E5F4FF;
+  border-radius: 54px;
+}
+
+.rate-amount-number {
+  width: max-content;
+  font-weight: 700;
+  font-size: 16px;
+
+  color: #6D9BF5;
+}
+
+.change-rate-button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #6D9BF5;
+
+  transition: color 0.4s;
+}
+
+.change-rate-button:hover {
+  color: #c5e4fa;
+}
+
+.current-rate-container {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+
+  padding: 120px 125px 120px 105px;
+
+  background-color: #fff;
+  border-radius: 36px;
+}
+
+.current-rate-amount {
+  margin-top: 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+
+  color: #9BB2DE;
+}
+
+.current-rate-label {
+  font-weight: 700;
+  font-size: 36px;
+
+  color: #5E62B6;
+}
+
+.rate-procentage {
+  font-weight: 800;
+}
+
+.current-rate-add-button {
+  margin-top: 24px;
+  padding: 22px 136px;
+
+  background-color: #6D9BF5;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.current-rate-add-button:hover {
+  background-color: #c5e4fa;
+  color: #6D9BF5;
+}
+
+.meals-list {
+  margin-top: 50px;
+}
+
+.meal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 20px 32px 20px 32px;
+  margin-bottom: 25px;
+  background-color: #E5F4FF;
+  border-radius: 54px;
+
+  font-weight: bold;
+  font-size: 18px;
+
+  color: #6D9BF5;
+}
+
+.meal-amount {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.meal-time {
+  justify-self: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.remove-meal-button {
+  grid-column-start: 4;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
